@@ -5,8 +5,6 @@ services:
     image: ghcr.io/adiwahyudi02/ebay-scraping-frontend:${IMAGE_TAG:-latest}
     ports:
       - '3000:3000'
-    environment:
-      - NEXT_PUBLIC_BACKEND_API_URL=http://localhost:4000
     depends_on:
       - backend
 
